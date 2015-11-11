@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Builder.Products.Parts
 {
-    public class HomeButton
+    public class HomeButton : Parts.ProductPart
     {
         public HomeButton(bool hasTouchID)
         {

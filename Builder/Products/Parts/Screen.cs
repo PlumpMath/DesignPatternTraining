@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Builder.Products.Parts
 {
-    public class Screen
+    public class Screen : Parts.ProductPart
     {
         public Screen(float size)
         {
