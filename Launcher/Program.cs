@@ -18,8 +18,13 @@ namespace Launcher
                 //var product = factory.Create();
                 //Console.WriteLine(product);
 
-                var factory = new AbstractFactory.Factories.FactoryApple();
-                var product = factory.CreatePhone();
+                //var factory = new AbstractFactory.Factories.FactoryApple();
+                //var product = factory.CreatePhone();
+                //Console.WriteLine(product);
+
+                var manager = new Builder.Builders.iPhoneManager();
+                var builder = new Builder.Builders.iPhoneBuilderFor5();
+                var product = manager.Produce(builder);
                 Console.WriteLine(product);
             }
             catch (Exception ex)
