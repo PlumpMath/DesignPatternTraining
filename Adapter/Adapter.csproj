@@ -39,6 +39,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapters\ChargeAdapterForAndroid.cs" />
+    <Compile Include="Adapters\ChargeAdapterForIPhone.cs" />
+    <Compile Include="Adapters\ChargeAdapter.cs" />
+    <Compile Include="Phones\Android.cs" />
+    <Compile Include="Phones\iPhone.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
