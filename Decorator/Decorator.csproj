@@ -39,7 +39,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Decorators\手机修饰器.cs" />
+    <Compile Include="Decorators\手机保护壳.cs" />
+    <Compile Include="iPhone.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Decorators\手机贴膜.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

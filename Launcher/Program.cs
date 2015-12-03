@@ -28,6 +28,13 @@ namespace Launcher
                 //square.GetArea("B").Play();
                 //square.GetArea("A").Leave();
                 //square.GetArea("C").Play();
+
+                var iphone = new Decorator.iPhone { Owner = "孙博" };
+                iphone.打电话();
+                var newphone = new Decorator.Decorators.手机保护壳(iphone);
+                newphone.打电话();
+                newphone.展示给大家看();
+                newphone.不怕摔();
             }
             catch (Exception ex)
             {
