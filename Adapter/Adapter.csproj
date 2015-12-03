@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F4E6B98B-F6AD-48BC-8EEF-A59F252611B3}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{9C04302F-B768-4ACF-83B5-CB931AED427A}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Launcher</RootNamespace>
-    <AssemblyName>Launcher</AssemblyName>
+    <RootNamespace>Adapter</RootNamespace>
+    <AssemblyName>Adapter</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -41,46 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\AbstractFactory\AbstractFactory.csproj">
-      <Project>{c3a22a97-3fbc-47ca-bd9a-073b1e531a71}</Project>
-      <Name>AbstractFactory</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Adapter\Adapter.csproj">
-      <Project>{9c04302f-b768-4acf-83b5-cb931aed427a}</Project>
-      <Name>Adapter</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Builder\Builder.csproj">
-      <Project>{84c26ca8-0308-4e99-af14-945ce7899477}</Project>
-      <Name>Builder</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Decorator\Decorator.csproj">
-      <Project>{2f1def25-8c22-4dbb-8609-3042c78028d6}</Project>
-      <Name>Decorator</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\FactoryMethod\FactoryMethod.csproj">
-      <Project>{43ec0380-f5e5-45db-9559-0145aa7dcd4e}</Project>
-      <Name>FactoryMethod</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Flyweight\Flyweight.csproj">
-      <Project>{c5274333-d270-4b15-bbeb-b1dda1b1dc25}</Project>
-      <Name>Flyweight</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Prototype\Prototype.csproj">
-      <Project>{b2e034ae-7a3f-449f-85ea-10a42a3b366e}</Project>
-      <Name>Prototype</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SimpleFactory\SimpleFactory.csproj">
-      <Project>{6adfa366-bff0-4e4d-863c-7619004d2d93}</Project>
-      <Name>SimpleFactory</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Singleton\Singleton.csproj">
-      <Project>{992c1b9f-b5eb-4b98-82bd-1f92531ebf54}</Project>
-      <Name>Singleton</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
