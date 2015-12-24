@@ -53,6 +53,10 @@
       <Project>{9c04302f-b768-4acf-83b5-cb931aed427a}</Project>
       <Name>Adapter</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Bridge\Bridge.csproj">
+      <Project>{fe8a48c7-ffdd-40f9-a8fe-7a8dc6a20e0a}</Project>
+      <Name>Bridge</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Builder\Builder.csproj">
       <Project>{84c26ca8-0308-4e99-af14-945ce7899477}</Project>
       <Name>Builder</Name>
