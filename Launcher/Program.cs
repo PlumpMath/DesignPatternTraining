@@ -11,10 +11,12 @@ namespace Launcher
         {
             try
             {
+                Composite.Launcher.After();
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Exception:{0}", ex.Message);
+                Console.WriteLine("Exception  :{0}", ex.Message);
+                Console.WriteLine("StackTrace :{0}", ex.StackTrace);
             }
             finally
             {
